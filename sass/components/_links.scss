@@ -1,0 +1,96 @@
+.link {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+    text-decoration: none;
+    line-height: 1.14;
+    color: $color-primary;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        color: $color-activ;
+    }
+}
+@media screen and (max-width: 767px) {
+    .link {
+        padding: 18px 0;
+            text-decoration: none;
+            line-height: 1.14;
+            color: $color-primary;
+        
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+            &:hover,
+            &:focus {
+                color: $color-activ;
+            }
+        }
+}
+
+.link-social {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: $color-icons;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+    &:hover, &:focus {
+        background-color: $color-activ;
+        color: $color-background;
+    }
+    
+}
+
+.link-client {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $color-icons;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: $color-icons;
+
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        color: $color-activ;
+        border: 1px solid $color-activ;
+    }
+}
+
+.link-contract {
+    text-decoration: underline;
+    color: $color-activ;
+}
+
+
+
+.link.current {
+    color: $color-activ;
+}
+
+// .current::after {
+//     // content: '';
+//     // position: absolute;
+//     // width: 100%;
+//     // height: 4px;
+//     // left: 0;
+//     // bottom: 0;
+//     // background-color: $color-activ;
+//     // border-radius: 2px;
+// }

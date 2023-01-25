@@ -1,0 +1,26 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    &:checked+.contract__icon {
+            background-color: $color-activ;
+            background-image: url(../images/icons/icon-check.svg);
+            background-size: contain;
+            background-origin: border-box;
+            border-color: $color-activ;
+    }
+
+    &:focus+.contract__icon,
+    &:hover+.contract__icon {
+        border: 2px solid $color-activ;
+    }
+}

@@ -1,0 +1,18 @@
+.list-box {
+    // display: flex;
+    // flex-wrap: wrap;
+    gap: 30px;
+
+    &__col3>li {
+        @include width-column(3);
+    }
+
+    &__col4>li {
+        @include width-column(4);
+    }
+
+    &__col6>li {
+        @include width-column(6);
+    }
+}
+

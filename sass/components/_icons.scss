@@ -1,0 +1,27 @@
+.icon {
+    fill: currentColor;    
+}
+
+.close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 6px;
+    background-color: $color-background;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        fill: $color-activ;
+    }
+}
+
+.send {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    fill: $color-background;
+}

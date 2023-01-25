@@ -1,0 +1,74 @@
+.footer {
+    display: flex;
+    align-items: baseline;
+
+    &__font {
+        padding: 60px 0;
+        background-color: $color-bg-dark;
+        font-size: 14px;
+        line-height: 1.71;        
+        }
+
+    &__list>li:not(:last-child) {
+            margin-bottom: 9px;
+        }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        line-height: 1.71;
+        font-style: normal;
+    }
+
+    &__link--adress {
+        color: $color-background;
+        text-decoration: none;
+        line-height: 1.71;
+        font-style: normal;
+    }
+    
+    &__logo {
+        display: block;
+        margin-bottom: 20px;
+        font-family: $font-minor;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: $color-background;
+        text-decoration: none;
+    }
+
+    
+
+    &__modal {
+        margin-left: auto;
+    }
+
+    &__email-input {
+        display: flex;
+    }
+
+    &__email {
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        padding-left: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: $color-bg-dark;
+    
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__button {
+        padding: 10px 62px 10px 28px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+}
+

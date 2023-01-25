@@ -1,0 +1,54 @@
+body {
+    font-size: 14px;
+    font-family: $font-primary;
+    background-color: $color-background;
+    color: $color-primary;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.section {
+    // padding: 94px 0;
+}
+
+.nopadding {
+    padding-top: 0;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.container.no-margin {
+    padding-bottom: 0;
+}
+
+
+:focus {
+    outline: none;
+}
