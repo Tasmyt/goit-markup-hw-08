@@ -1,7 +1,7 @@
 .head {
-    padding: 200px 0;
-    max-width: 1600px;
-    min-height: 600px;
+    padding: 118px 0;
+    max-width: 767px;
+    min-height: 400px;
     margin-right: auto;
     margin-left: auto;
     background-position: center;
@@ -10,7 +10,7 @@
     background-color: $color-bg-head;
 
 
-    line-height: 1.36;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -20,15 +20,51 @@
         max-width: 690px;
         margin: 0 auto 30px auto;
         font-weight: 900;
-        font-size: 44px;
+        font-size: 26px;
     }
+
+    @media screen and (min-width: 768px) {
+    
+        max-width: 1999px;        
+        
+    
+        & h1 {
+            max-width: 690px;
+            
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 200px 0;
+            max-width: 1600px;
+            min-height: 600px;        
+        
+            line-height: 1.36;
+                    
+            & h1 {
+                max-width: 690px;
+                font-weight: 900;
+                font-size: 44px;
+            }
+    }
+
 }
 
 .section__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
+
+    
+    @media screen and (min-width: 1200px) {
+       
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+       
+    }
 }

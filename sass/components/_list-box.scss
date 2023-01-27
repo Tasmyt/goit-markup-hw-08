@@ -1,7 +1,20 @@
 .list-box {
-    // display: flex;
-    // flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+       flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__col2>li {
+        @include width-column(2);
+    }
 
     &__col3>li {
         @include width-column(3);
@@ -16,3 +29,9 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .list-box__current {
+    display: flex;
+    flex-wrap: wrap;
+    }
+}

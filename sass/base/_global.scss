@@ -25,8 +25,21 @@ textarea {
     resize: none;
 }
 
-.section {
-    // padding: 94px 0;
+ .section {
+   padding:  60px 0;
+
+@media (max-width: 1199px) {
+        &.is-close {
+            display: none;
+        }
+    }
+
+@media screen and (min-width: 1200px) {
+
+    padding: 94px 0;
+}
+
+
 }
 
 .nopadding {
@@ -42,6 +55,7 @@ textarea {
     @media screen and (min-width: 1200px) {
         width: 1200px;
     }
+        
 }
 
 .container.no-margin {
@@ -52,3 +66,4 @@ textarea {
 :focus {
     outline: none;
 }
+
