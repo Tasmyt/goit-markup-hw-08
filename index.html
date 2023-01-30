@@ -109,7 +109,7 @@
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="preference list-box  list-box__col4 list-box__col2">
+          <ul class="preference list-box  list-box__col4 ">
             <li class="preference__icon">
               <h3>Увага до деталей</h3>
               <p class="preference__rubric">
@@ -180,13 +180,26 @@
       <section class="section team">
         <div class="container no-margin">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="list-box list-box__col4 list-box__col2">
+          <ul class="list-box list-box__col4 ">
             <li class="team__bordure">
-              <img
-                src="./images/photo1.jpg"
-                alt="Фото Ігор Дем'яненко"
-                min-width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/1x/team1@1x.webp 480w,
+                          ./images/2x/team1@2x.webp 960w,
+                          ./images/photo1.webp 1600w"
+                          type="image/webp" 
+                  >
+                  
+                <img 
+                  srcset="
+                      ./images/1x/team1@1x.jpg 480w,
+                      ./images/2x/team1@2x.jpg 768w,
+                      ./images/photo1.jpg 1200w"
+                  src="./images/photo1.jpg" alt="Фото Ігор Дем'яненко" 
+                  sizes="(max-width: 480px) 100vw, (min-width: 481px) 50vw, (min-width: 769px) 25vw" />
+              </picture>
+
+              
               <div class="team__box">
                 <h3>Ігор Дем'яненко</h3>
                 <p class="team__rubric">Product Designer</p>
@@ -223,11 +236,20 @@
               </div>
             </li>
             <li class="team__bordure">
-              <img
-                src="./images/photo2.jpg"
-                alt="Фото Ольга Рєпіна"
-                min-width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/1x/team2@1x.webp 480w,
+                          ./images/2x/team2@2x.webp 960w,
+                          ./images/photo2.webp 1600w"
+                          type="image/webp">
+                <img 
+                srcset="
+                    ./images/1x/team2@1x.jpg 480w,
+                    ./images/1x/team2@1x.jpg 768w,
+                    ./images/photo2.jpg 1200w,"
+                src="./images/photo2.jpg" alt="Фото Ольга Рєпіна" 
+                sizes="(max-width: 480px) 100vw, (min-width: 481px) 50vw, (min-width: 769px) 25vw" />
+              </picture>
               <div class="team__box">
                 <h3>Ольга Рєпіна</h3>
                 <p class="team__rubric">Frontend Developer</p>
@@ -264,11 +286,19 @@
               </div>
             </li>
             <li class="team__bordure">
-              <img
-                src="./images/photo3.jpg"
-                alt="Фото Микола Тарасов"
-                min-width="270"
-              />
+              <picture>
+                <source srcset="./images/1x/team3@1x.webp 480w,
+                                ./images/2x/team3@2x.webp 960w,
+                                ./images/photo3.webp 1600w"
+                                type="image/webp">
+                <img 
+                srcset="
+                    ./images/1x/team3@1x.jpg 480w,
+                    ./images/2x/team3@2x.jpg 768w,
+                    ./images/photo3.jpg 1200w"
+                src="./images/photo3.jpg" alt="Фото Микола Тарасов" 
+                sizes="(max-width: 480px) 100vw, (min-width: 481px) 50vw, (min-width: 769px) 25vw"/>
+              </picture>
               <div class="team__box">
                 <h3>Микола Тарасов</h3>
                 <p class="team__rubric">Marketing</p>
@@ -305,11 +335,21 @@
               </div>
             </li>
             <li class="team__bordure">
-              <img
-                src="./images/photo4.jpg"
-                alt="Фото Михайло Єрмаков"
-                min-width="270"
-              />
+              <picture>
+                <source 
+                    srcset="./images/1x/team4@1x.webp 480w,
+                            ./images/2x/team4@2x.webp 960w,
+                            ./images/photo4.webp 1600w"
+                      type="image/webp">
+                            
+                <img 
+                srcset="
+                      ./images/1x/team4@1x.jpg 480w,
+                      ./images/2x/team4@2x.jpg 768w,
+                      ./images/photo4.jpg 1200w"
+                src="./images/photo4.jpg" alt="Фото Михайло Єрмаков" 
+                sizes="(max-width: 480px) 100vw, (min-width: 481px) 50vw, (min-width: 769px) 25vw" />
+              </picture>
               <div class="team__box">
                 <h3>Михайло Єрмаков</h3>
                 <p class="team__rubric">UI Designer</p>

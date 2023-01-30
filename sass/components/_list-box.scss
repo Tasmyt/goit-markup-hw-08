@@ -12,16 +12,15 @@
         flex-wrap: wrap;
     }
 
-    &__col2>li {
-        @include width-column(2);
-    }
-
     &__col3>li {
         @include width-column(3);
     }
 
     &__col4>li {
         @include width-column(4);
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            @include width-column(2);
+        }
     }
 
     &__col6>li {
