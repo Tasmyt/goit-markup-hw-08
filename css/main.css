@@ -1221,6 +1221,12 @@ textarea {
     min-height: 581px;
   }
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    min-width: calc(100vw - 30px);
+    min-height: 581px;
+  }
+}
 .modal__title {
   margin: 0 auto 2px auto;
   font-size: 20px;
