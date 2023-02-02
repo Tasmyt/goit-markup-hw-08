@@ -1,5 +1,6 @@
 .list-box {
     gap: 30px;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
         display: flex;

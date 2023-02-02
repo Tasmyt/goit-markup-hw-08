@@ -46,6 +46,14 @@
     &__box {
         padding: 30px 122px 24px 122px;
 
+        @media screen and (max-width: 479px) {
+        
+                padding-top: 30px;
+                padding-right: calc((100vw - 206px) / 2 );
+                padding-bottom: 24px;
+                padding-left: calc((100vw - 206px) / 2);
+            }
+
         @media screen and (min-width: 768px) {
         
             padding: 30px 74px 24px 74px;
