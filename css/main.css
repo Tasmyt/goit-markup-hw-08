@@ -160,6 +160,9 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .button {
@@ -498,6 +501,13 @@ textarea {
     text-decoration: none;
     color: #2196f3;
   }
+}
+@media screen and (max-width: 767px) and (max-width: 479px) {
+  .header__adress--phone {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
   .header__adress.is-close {
     display: none;
   }
@@ -518,6 +528,11 @@ textarea {
 .header__adress--icon {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (max-width: 767px) {
+  .header__adress--icon {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .header--icon {
@@ -603,6 +618,7 @@ textarea {
     display: flex;
     margin-left: 76px;
     margin-right: 89px;
+    margin-bottom: 60px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -897,9 +913,9 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .head {
-    padding: 200px 0;
+    padding: 118px 0;
     max-width: 1600px;
-    min-height: 600px;
+    min-height: 400px;
     line-height: 1.36;
   }
   .head h1 {
@@ -942,6 +958,16 @@ textarea {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
+}
+@media screen and (max-width: 767px) {
+  .preference h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .preference__icon::before {
   content: "";
@@ -1040,6 +1066,9 @@ textarea {
   color: #757575;
 }
 .team__bordure {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

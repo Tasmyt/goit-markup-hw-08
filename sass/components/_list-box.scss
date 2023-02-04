@@ -33,5 +33,8 @@
     .list-box__current {
     display: flex;
     flex-wrap: wrap;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     }
 }
