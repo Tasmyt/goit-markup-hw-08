@@ -43,7 +43,7 @@
     @media screen and (max-width: 479px) {
 
         min-width: calc(100vw - 30px);
-        min-height: 581px;
+        max-height: calc(100vh - 80px);
 
     }
 
@@ -99,6 +99,11 @@
 
     &__textarea {
         min-height: 120px;
+
+        @media screen and (max-width: 479px) {        
+            min-height: 80px;                
+        
+        }
     }
 
    &__icon {

@@ -1253,7 +1253,7 @@ textarea {
 @media screen and (max-width: 479px) {
   .modal {
     min-width: calc(100vw - 30px);
-    min-height: 581px;
+    max-height: calc(100vh - 80px);
   }
 }
 .modal__title {
@@ -1300,6 +1300,11 @@ textarea {
 }
 .form__textarea {
   min-height: 120px;
+}
+@media screen and (max-width: 479px) {
+  .form__textarea {
+    min-height: 80px;
+  }
 }
 .form__icon {
   position: absolute;
