@@ -51,7 +51,13 @@
                     margin-right: 50px;
                     }
             }
+
+        @media (max-width: 479px) {
+
+            font-size: 32px;
+        }
         @media (max-width: 767px) {
+            
             &.is-close {
                 display: none;
             }
@@ -115,12 +121,16 @@
                 letter-spacing: 0.02em;
                 text-decoration: none;
                 color: $color-minor;
+
+                @media screen and (max-width: 479px) {
+                        margin-bottom: 48px;
+                        font-size: 16px;
+                    }
             }
         
             &--phone {
                 display: block;
-                margin-bottom: 32px;
-                margin-bottom: 32px;
+                margin-bottom: 32px;                
                 font-weight: 500;
                 font-size: 34px;
                 line-height: 40px;
@@ -129,7 +139,9 @@
                 color: $color-activ;
 
                 @media screen and (max-width: 479px){
-                font-size: 32px;
+                margin-bottom: 24px;
+                font-size: 24px;
+
                 }
             }
 

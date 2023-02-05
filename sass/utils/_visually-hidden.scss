@@ -14,6 +14,7 @@
     &:checked+.contract__icon {
             background-color: $color-activ;
             background-image: url(../images/icons/icon-check.svg);
+            background-repeat: no-repeat;
             background-size: contain;
             background-origin: border-box;
             border-color: $color-activ;

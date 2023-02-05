@@ -14,6 +14,7 @@
 .visually-hidden:checked + .contract__icon {
   background-color: #2196f3;
   background-image: url(../images/icons/icon-check.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
   border-color: #2196f3;
@@ -90,15 +91,16 @@ textarea {
 .container {
   padding: 0 15px;
   margin: 0 auto;
+  max-width: 480px;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -232,7 +234,7 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .link {
-    padding: 0 0 36px 0;
+    padding: 0 0 28px 0;
     text-decoration: none;
     line-height: 1.14;
     color: #212121;
@@ -430,6 +432,11 @@ textarea {
     margin-right: 50px;
   }
 }
+@media (max-width: 479px) {
+  .header__font {
+    font-size: 32px;
+  }
+}
 @media (max-width: 767px) {
   .header__font.is-close {
     display: none;
@@ -490,9 +497,16 @@ textarea {
     text-decoration: none;
     color: #757575;
   }
+}
+@media screen and (max-width: 767px) and (max-width: 479px) {
+  .header__adress--mail {
+    margin-bottom: 48px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
   .header__adress--phone {
     display: block;
-    margin-bottom: 32px;
     margin-bottom: 32px;
     font-weight: 500;
     font-size: 34px;
@@ -504,7 +518,8 @@ textarea {
 }
 @media screen and (max-width: 767px) and (max-width: 479px) {
   .header__adress--phone {
-    font-size: 32px;
+    margin-bottom: 24px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -636,6 +651,7 @@ textarea {
   .footer .footer-wrapper {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
   }
   .footer__logo {
     -webkit-box-pack: left;
@@ -875,6 +891,17 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .head {
+    padding: 118px 0;
+    min-height: 400px;
+    max-width: 1999px;
+    line-height: 1.36;
+  }
+  .head h1 {
+    max-width: 690px;
+    font-weight: 900;
+    font-size: 44px;
+  }
+  .head {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/1x/Header-tablet@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/1x/Header-tablet@1x.jpg);
   }
@@ -886,6 +913,9 @@ textarea {
   }
 }
 @media screen and (min-width: 1200px) {
+  .head {
+    padding: 200px 0;
+  }
   .head {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/1x/Header-desk@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/1x/Header-desk@1x.jpg);
@@ -902,27 +932,6 @@ textarea {
   margin: 0 auto 30px auto;
   font-weight: 900;
   font-size: 26px;
-}
-@media screen and (min-width: 768px) {
-  .head {
-    max-width: 1999px;
-  }
-  .head h1 {
-    max-width: 690px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .head {
-    padding: 118px 0;
-    max-width: 1600px;
-    min-height: 400px;
-    line-height: 1.36;
-  }
-  .head h1 {
-    max-width: 690px;
-    font-weight: 900;
-    font-size: 44px;
-  }
 }
 
 .section__title {
@@ -1254,6 +1263,8 @@ textarea {
   .modal {
     min-width: calc(100vw - 30px);
     max-height: calc(100vh - 80px);
+    min-height: 510px;
+    padding: 30px;
   }
 }
 .modal__title {
@@ -1303,7 +1314,7 @@ textarea {
 }
 @media screen and (max-width: 479px) {
   .form__textarea {
-    min-height: 80px;
+    min-height: 60px;
   }
 }
 .form__icon {
@@ -1324,6 +1335,11 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 479px) {
+  .contract {
+    margin: 10px auto 20px auto;
+  }
 }
 .contract__label {
   line-height: 1.17;
